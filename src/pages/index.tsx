@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import { motion } from "framer-motion";
-import { useState } from "react";
+import { IconCursos } from "@/components/icons/iconsHome/iconCursos";
 
 import styles from "@/styles/Home.module.css";
 import home from "../../public/images/home.png";
@@ -21,69 +20,104 @@ export default function Home() {
         <div className={styles.containerHeader}>
           <section className={styles.ctaText}>
             <h1 className={styles.title}>Bem vind@ à</h1>
-           <div><Image className={styles.img} src={home} alt="Music For All Logo" /></div> 
-
-            <span className={styles.subtitle}>
+            <div>
+              <Image
+                className={styles.img}
+                src={home}
+                alt="Music For All Logo"
+              />
+            </div>
+            <h2 className={styles.slogan}>
               Na Music for All, acreditamos que a música é a linguagem universal
-              que une corações e almas. Nossa escola de música é o lugar onde os
-              sonhos musicais se transformam em realidade. Seja você um
-              iniciante apaixonado, um aspirante a virtuose ou alguém que deseja
-              apenas explorar os benefícios terapêuticos da música, nossa
-              comunidade acolhedora e inspiradora está aqui para guiá-lo em sua
-              jornada musical.
+              que une corações e almas.
+            </h2>
+            <div className={styles.buttonGroup}>
+              <a className={styles.buttonContainer}>
+                <button className={styles.buttons}>
+                  <span className={styles.iconButton}> <IconCursos/></span>
+                  <span className={styles.titleButton}>CURSOS</span>
+                  <span className={styles.subtitleButton}>
+                    Descrição dos cursos
+                  </span>
+                </button>
+              </a>
+
+              <a>
+                <button className={styles.buttons}>
+                  <span className={styles.iconButton}> <IconCursos/></span>
+                  <span className={styles.titleButton}>Nossos cursos</span>
+                  <span className={styles.subtitleButton}>
+                    Descrição dos cursos
+                  </span>
+                </button>
+              </a>
+
+              <a>
+                <button className={styles.buttons}>
+                  <span className={styles.iconButton}> <IconCursos/></span>
+                  <span className={styles.titleButton}>Nossos cursos</span>
+                  <span className={styles.subtitleButton}>
+                    Descrição dos cursos
+                  </span>
+                </button>
+              </a>
+            </div>
+            <span className={styles.subtitle}>
+              Nossa escola de música é o lugar onde os sonhos musicais se
+              transformam em realidade. Seja você um iniciante apaixonado, um
+              aspirante a virtuose ou alguém que deseja apenas explorar os
+              benefícios terapêuticos da música, nossa comunidade acolhedora e
+              inspiradora está aqui para guiá-lo em sua jornada musical.
             </span>
           </section>
         </div>
         <div className={styles.containerTwo}>
-          
-          
           <section className={styles.ctaText}>
             <h1 className={styles.title2}>Por que Escolher a Music for All?</h1>
-           
 
-           
-              <ul className={styles.lista}>
-                <li className={styles.item}>
-                  Educação Personalizada: Nossos instrutores talentosos e
-                  dedicados adaptam as aulas de acordo com suas metas e nível de
-                  habilidade, garantindo que você aproveite ao máximo sua
-                  experiência musical.
-                </li>
-                <li className={styles.item}>
-                  Variedade de Instrumentos: Oferecemos uma ampla gama de aulas
-                  de instrumentos, desde piano e violino até guitarra e canto,
-                  para que você possa escolher o que mais lhe inspira.
-                </li>
-                <li className={styles.item}>
-                  Aulas para Todas as Idades: De crianças a adultos, todos são
-                  bem-vindos para aprender, crescer e se expressar através da
-                  música.
-                </li>
-                <li className={styles.item}>
-                  Atmosfera de Apoio: Nossa comunidade de alunos e instrutores
-                  se une em torno do amor pela música, criando um ambiente onde
-                  todos se sentem valorizados e encorajados.
-                </li>
-                <li className={styles.item}>
-                  Atuações e Eventos: Oferecemos oportunidades emocionantes para
-                  nossos alunos se apresentarem e compartilharem seu talento com
-                  o mundo.
-                </li>
-              </ul>
-              <Image
+            <ul className={styles.lista}>
+              <li className={styles.item}>
+                Educação Personalizada: Nossos instrutores talentosos e
+                dedicados adaptam as aulas de acordo com suas metas e nível de
+                habilidade, garantindo que você aproveite ao máximo sua
+                experiência musical.
+              </li>
+              <li className={styles.item}>
+                Variedade de Instrumentos: Oferecemos uma ampla gama de aulas de
+                instrumentos, desde piano e violino até guitarra e canto, para
+                que você possa escolher o que mais lhe inspira.
+              </li>
+              <li className={styles.item}>
+                Aulas para Todas as Idades: De crianças a adultos, todos são
+                bem-vindos para aprender, crescer e se expressar através da
+                música.
+              </li>
+              <li className={styles.item}>
+                Atmosfera de Apoio: Nossa comunidade de alunos e instrutores se
+                une em torno do amor pela música, criando um ambiente onde todos
+                se sentem valorizados e encorajados.
+              </li>
+              <li className={styles.item}>
+                Atuações e Eventos: Oferecemos oportunidades emocionantes para
+                nossos alunos se apresentarem e compartilharem seu talento com o
+                mundo.
+              </li>
+            </ul>
+            <Image
               className={styles.img}
               src={alunos}
               alt="Music For All Logo"
             />
-              <h3 className={styles.subtitulo2}>Junte-se a Nós na Jornada Musical!</h3>
-              <p className={styles.paragrafo}>
-                Na Music for All, acreditamos que a música está ao alcance de
-                todos. Deixe-nos guiá-lo através das maravilhas da música e
-                ajudá-lo a descobrir seu potencial musical único. Explore nossos
-                cursos, conheça nossos instrutores e mergulhe na magia da
-                música. Sua jornada musical começa aqui, na Music for All.
-              </p>
-           
+            <h3 className={styles.subtitulo2}>
+              Junte-se a Nós na Jornada Musical!
+            </h3>
+            <p className={styles.paragrafo}>
+              Na Music for All, acreditamos que a música está ao alcance de
+              todos. Deixe-nos guiá-lo através das maravilhas da música e
+              ajudá-lo a descobrir seu potencial musical único. Explore nossos
+              cursos, conheça nossos instrutores e mergulhe na magia da música.
+              Sua jornada musical começa aqui, na Music for All.
+            </p>
           </section>
         </div>
       </main>

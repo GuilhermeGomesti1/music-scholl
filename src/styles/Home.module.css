@@ -31,10 +31,68 @@ justify-content: center;}
 .title{ font-size: 3.5rem;
 line-height: 4.5rem;
 font-weight: 900;
-margin-top: 2.5rem;
 color: white;
 
 }
+
+.slogan{
+  font-size: 1.5rem;
+  line-height: 4.5rem;
+  font-weight: 900;
+  color: white;
+}
+
+.buttonGroup {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+ 
+}
+.buttonContainer{
+  flex-direction: column; 
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  
+}
+.buttons{width: 350px;
+  height: 350px;
+  text-align: center;
+  border-radius: 30px;
+  margin: 0 20px; 
+  margin-top: 2rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+
+.iconButton{
+  margin-bottom: 40px;
+ display: block;
+  align-items: center;
+  
+}
+
+.titleButton{
+font-weight: bold;
+  font-size: 2rem;
+  display: block; 
+
+}
+
+.subtitleButton{
+  font-size: 1.2rem;
+  display: block; 
+}
+
+
+
+
 
 .subtitle{
   margin-top: 0 auto;
