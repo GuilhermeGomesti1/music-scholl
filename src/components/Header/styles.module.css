@@ -1,0 +1,47 @@
+.headerContainer{
+    height: 6rem;
+    background-color: white;
+
+
+}
+
+.headerContent{
+    max-width: 1128px;
+    height: 6rem;
+    justify-content: space-between;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+
+}
+
+.img{
+    cursor: pointer;
+    margin-right:0 auto;
+    height: 80%;
+    width: 80%;
+    
+    
+}
+
+.navContainer{
+    margin-left:0 auto; 
+    justify-content: flex-end; 
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+}
+
+
+.aContainer{
+ display: inline-block;
+ position: relative;
+ padding: 0 20px;
+ height: 6rem;
+ line-height: 6rem;
+  
+}
+
+
+
+
