@@ -1,10 +1,12 @@
 import Head from "next/head";
 import Image from "next/image";
 import { IconCursos } from "@/components/icons/iconsHome/iconCursos";
-
+import { IconBlog } from "@/components/icons/iconsHome/iconBlog";
+import { IconContact } from "@/components/icons/iconsHome/iconContact";
 import styles from "@/styles/Home.module.css";
 import home from "../../public/images/home.png";
 import alunos from "../../public/images/alunos.png";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -19,7 +21,7 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.containerHeader}>
           <section className={styles.ctaText}>
-            <h1 className={styles.title}>Bem vind@ à</h1>
+            <h1 className={styles.title}>Bem vindo à</h1>
             <div>
               <Image
                 className={styles.img}
@@ -32,42 +34,55 @@ export default function Home() {
               que une corações e almas.
             </h2>
             <div className={styles.buttonGroup}>
-              <a className={styles.buttonContainer}>
+              <Link href={"/cursos"} className={styles.buttonContainer}>
                 <button className={styles.buttons}>
-                  <span className={styles.iconButton}> <IconCursos/></span>
+                  <span className={styles.iconButton}>
+                    <IconCursos />
+                  </span>
                   <span className={styles.titleButton}>CURSOS</span>
                   <span className={styles.subtitleButton}>
-                    Descrição dos cursos
+                    Oferecemos uma ampla gama de aulas de instrumentos, para que
+                    você possa escolher o que mais lhe inspira.
                   </span>
                 </button>
-              </a>
+              </Link>
 
-              <a>
-                <button className={styles.buttons}>
-                  <span className={styles.iconButton}> <IconCursos/></span>
-                  <span className={styles.titleButton}>Nossos cursos</span>
-                  <span className={styles.subtitleButton}>
-                    Descrição dos cursos
-                  </span>
-                </button>
-              </a>
 
-              <a>
+              <Link href={"/blog"} className={styles.buttonContainer}>
                 <button className={styles.buttons}>
-                  <span className={styles.iconButton}> <IconCursos/></span>
-                  <span className={styles.titleButton}>Nossos cursos</span>
+                  <span className={styles.iconButton}>
+                    
+                    <IconBlog />
+                  </span>
+                  <span className={styles.titleButton}>BLOG</span>
                   <span className={styles.subtitleButton}>
-                    Descrição dos cursos
+                    Um pouco dos nossos conteúdos! <br />
+                    para que vc entenda mais dos nossos métodos.
                   </span>
                 </button>
-              </a>
+              </Link>
+
+
+              <Link href={"/contato"} className={styles.buttonContainer}>
+                <button className={styles.buttons}>
+                  <span className={styles.iconButton}>
+                    <IconContact />
+                  </span>
+                  <span className={styles.titleButton}> CONTATO</span>
+                  <span className={styles.subtitleButton}>
+                    Fale com a gente! <br/>
+                    Esclareça suas dúvidas. <br/>
+                    Agende uma aula experimental!
+                  </span>
+                </button>
+              </Link>
+
             </div>
             <span className={styles.subtitle}>
-              Nossa escola de música é o lugar onde os sonhos musicais se
-              transformam em realidade. Seja você um iniciante apaixonado, um
+             <br/> Seja você um iniciante apaixonado, um
               aspirante a virtuose ou alguém que deseja apenas explorar os
-              benefícios terapêuticos da música, nossa comunidade acolhedora e
-              inspiradora está aqui para guiá-lo em sua jornada musical.
+              benefícios  terapêuticos  da música,  Nossa escola de música é o lugar onde os sonhos musicais se
+              transformam em realidade. 
             </span>
           </section>
         </div>

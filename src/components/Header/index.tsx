@@ -16,11 +16,12 @@ export function Header() {
         </div>
 
         <nav className={styles.navContainer}>
-          <Link legacyBehavior href="/">
-            <a className={styles.aContainer}>Home</a>
+          <Link href="/" className={styles.aContainer}>
+            Home
           </Link>
-          <Link legacyBehavior href="/sobre">
-            <a className={styles.aContainer}>Sobre</a>
+
+          <Link href="/cursos" className={styles.aContainer}>
+            Sobre
           </Link>
   
         </nav>
