@@ -33,7 +33,9 @@ export default function Home() {
               Na Music for All, acreditamos que a música é a linguagem universal
               que une corações e almas.
             </h2>
+
             <div className={styles.buttonGroup}>
+             
               <Link href={"/cursos"} className={styles.buttonContainer}>
                 <button className={styles.buttons}>
                   <span className={styles.iconButton}>
@@ -70,20 +72,23 @@ export default function Home() {
                   </span>
                   <span className={styles.titleButton}> CONTATO</span>
                   <span className={styles.subtitleButton}>
-                    Fale com a gente! <br/>
-                    Esclareça suas dúvidas. <br/>
+                    Fale com a gente! 
+                    Esclareça suas dúvidas. 
                     Agende uma aula experimental!
                   </span>
                 </button>
               </Link>
 
             </div>
-            <span className={styles.subtitle}>
-             <br/> Seja você um iniciante apaixonado, um
+            <div className={styles.divSubtitle}>
+              <span className={styles.subtitle}>
+              Seja você um iniciante apaixonado, um
               aspirante a virtuose ou alguém que deseja apenas explorar os
               benefícios  terapêuticos  da música,  Nossa escola de música é o lugar onde os sonhos musicais se
               transformam em realidade. 
             </span>
+            </div>
+            
           </section>
         </div>
         <div className={styles.containerTwo}>

@@ -51,7 +51,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 .buttons {
   width: 350px;
@@ -95,8 +94,8 @@
   margin-top: 1rem;
 }
 
-
-.subtitle {margin-top: 10rem;
+.subtitle {
+  margin-top: 10rem;
   margin-top: 0 auto;
   font-size: 1rem;
   line-height: 2.25rem;
@@ -135,14 +134,11 @@
   left: 0;
 }
 
-/* Estilizando o subtítulo (h3) */
 .subtitulo {
-  font-style: italic; /* Defina a fonte em itálico ou ajuste conforme desejado */
 }
 
-/* Estilizando o último parágrafo (p) */
 .paragrafo2 {
-  font-weight: bold; /* Defina a fonte em negrito ou ajuste conforme desejado */
+  font-weight: bold;
 }
 
 /* Enable hover only on non-touch devices */
@@ -150,7 +146,119 @@
 }
 
 /* Mobile */
-@media (max-width: 700px) {
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .img {
+    width: 475px;
+    height: 340px;
+  }
+
+  .title {
+    font-size: 2rem;
+    margin-top: -0.2rem;
+    margin-bottom: -2rem;
+  }
+
+  .slogan {
+    max-width: 350px;
+    margin: 0 auto;
+    font-size: 0.9rem;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  .ctaText {margin: 0 auto;
+    text-align: center;
+    font-size: 1rem;
+    align-items: center;
+    
+   
+  }
+
+  .buttonGroup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 70%;
+    
+    
+  }
+
+  .buttonContainer {
+  }
+
+  .buttons {
+    
+    margin: 0;
+    margin-bottom: 1rem;
+    width: 250px;
+     height: 250px;
+  }
+
+
+
+.iconButton {
+
+  margin-bottom: 5px;
+  display: block;
+  align-items: center;
+}
+
+.titleButton {
+  font-weight: bold;
+  font-size: 1.2rem;
+  display: block;
+}
+
+.subtitleButton {
+  font-size: 0.8rem;
+  display: block;
+  margin-top: 1rem;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.subtitle {
+  margin-top: 10rem;
+  margin-top: 0 auto;
+  font-size: 1rem;
+  line-height: 2.25rem;
+  color: white;
+}
+
+
+
+
+
+  .divSubtitle{margin: 0 auto;
+    max-width: 350px;
+  }
+  .subtitle{font-size: 1rem;
+    
+  }
+
+  .containerTwo{
+
+    .title2{
+      font-size: 2rem;
+      line-height: 3rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+
+    .img{
+      width: 400px;
+      height: 300px;
+    }
+  }
 }
 
 /* Tablet and Smaller Desktop */

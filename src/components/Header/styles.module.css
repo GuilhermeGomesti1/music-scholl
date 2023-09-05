@@ -51,5 +51,34 @@
 }
 
 
+@media (max-width: 768px) {
+   
+    .headerContainer{
+        align-items: center;
+        margin-top: -2.5rem;
+        margin-bottom: -1rem;
+        justify-content: center;
+    }
 
+    .headerContent{
+        flex-direction: row;
+        padding: 1rem;
+        margin-bottom: 4rem;
+    }
+
+    .img{margin-top: 0 auto;
+        width: 9rem;
+    }
+
+    .navContainer{
+
+    }
+
+    .aContainer{
+        font-size: 0.8rem;
+        margin: 0 1rem;
+        padding-bottom: 0.7rem;
+    }
+
+}
 
